@@ -2,7 +2,7 @@
 
     #conexion a la base de datos#
 	function conexion(){
-    	$pdo = new PDO('mysql:host=10.0.2.1;dbname=fmc','jonas.salas', 'camaleon');
+    	$pdo = new PDO('mysql:host=$host;dbname=$bd','$usuario', '$clave');
     	return $pdo;
 	}
 
